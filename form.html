@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+
+      form {
+        width: 700px;
+        background-color: #eee;
+        margin: auto;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 3px 4px 5px #919294;
+      }
+
+      form .title {
+        display: flex;
+        height: 120px;
+        border-bottom: 2px solid #7d7c7c;
+      }
+
+      form .title p {
+        line-height: 120px;
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+
+      form .nama {
+        width: 200px;
+      }
+
+      form table {
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-size: 1em;
+      }
+
+      table th,
+      td {
+        padding: 8px 40px;
+        margin: 0;
+      }
+
+      .total {
+        display: flex;
+      }
+
+      .total span {
+        background-color: #c70039;
+        color: #fff;
+        width: 350px;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: #141e46;
+        border: none;
+        color: #fff;
+        width: 350px;
+        padding: 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="number"] {
+        width: 250px;
+        padding: 3px;
+        border: 2px solid #2e97a7;
+        outline: none;
+        border-radius: 4px;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="title">
+          <img src="kartu.png" width="200px" alt="kartu" />
+          <p>Form Pembayaran</p>
+        </div>
+        <table>
+          <tr>
+            <td><label for="nama">Nama Lengkap</label></td>
+            <td><input type="text" id="nama" name="nama" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" id="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="isian-telpon">Nomor Hp</label></td>
+            <td><input id="isian-telpon" type="tel" /></td>
+          </tr>
+          <tr>
+            <td>Alamat Lengkap</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="metode">Pilih Metode Pembayaran</label></td>
+            <td>
+              <select name="metode" id="metode">
+                <option value="Indomaret">Indomaret</option>
+                <option value="Alfamart">Alfamart</option>
+                <option value="PayLater">PayLater</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Nomer">Jumlah Barang</label></td>
+            <td><input type="number" /></td>
+          </tr>
+          <tr>
+            <td><p>Kirim Sebagai Dropshipper</p></td>
+            <td>
+              <span><input type="radio" id="radio" name="radio" value="Ya" />Ya</span>
+              <span><input type="radio" id="radio" name="radio" value="Tidak" />Tidak</span>
+            </td>
+          </tr>
+          <tr>
+            <td><p>*Saya menyetujui semua persyaratan yang berlaku</p></td>
+            <td>
+              <span><input type="checkbox" id="checkbox" name="checkbox" value="Ya" />Ya</span>
+            </td>
+          </tr>
+        </table>
+        <div class="total">
+          <span>Total Pembayaran : Rp.200.000</span>
+          <input type="submit" value="Checkout" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

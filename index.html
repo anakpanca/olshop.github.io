@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #eee;
+      }
+
+      .navbar {
+        height: 80px;
+        background-color: #1aacac;
+        line-height: 80px;
+        text-align: center;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: #fff;
+      }
+
+      .navbar span {
+        float: left;
+        margin-left: 20px;
+        font-weight: light;
+        font-size: 2em;
+        color: #fff;
+      }
+
+      .hero {
+        background-color: #1aacac;
+        color: #b6fffa;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h4 {
+        color: #113946;
+      }
+
+      .hero .highlight {
+        margin-top: 90px;
+      }
+
+      .hero .highlight p {
+        font-size: 10px;
+      }
+
+      .galeri {
+        height: 92vh;
+        margin: 30px auto;
+        text-align: center;
+      }
+
+      .galeri .container {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+      }
+
+      .galeri .produk1 {
+        width: 270px;
+        height: 320px;
+        margin-top: 30px;
+        background-color: #1aacac;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 3px 3px 5px #919294;
+      }
+
+      .galeri .produk1 img {
+        transition: 1s;
+      }
+
+      .galeri .produk1 img:hover {
+        transform: scale(110%);
+      }
+
+      .galeri .produk1 button {
+        width: 100%;
+        height: 38px;
+        border: none;
+        transform: translateY(-7px);
+        background-color: #1aacac;
+      }
+
+      .galeri .produk1 button a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .footer {
+        height: 100px;
+        background-color: #1aacac;
+        text-align: center;
+        line-height: 100px;
+        color: #113946;
+      }
+
+      .footer a {
+        text-decoration: none;
+        color: #113946;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <span>Er Store</span>
+      <a href="#">Beranda</a>
+      <a href="#">Pria</a>
+      <a href="#">Wanita</a>
+      <a href="#">Produk</a>
+    </div>
+    <div class="hero">
+      <img src="digantung4.png" alt="" />
+      <div class="highlight">
+        <h4>New Essential Tees</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab delectus porro <br />
+          laborum, soluta officiis ad! Veniam sapiente illum voluptatibus eos libero, aliquid<br />
+          cumque! Dignissimos, aut ab adipisci architecto debitis sit.
+        </p>
+      </div>
+    </div>
+    <div class="galeri">
+      <h3>Best Seller Product</h3>
+      <div class="container">
+        <div class="produk1">
+          <img src="baju2.jpg" width="270px" alt="Produk1" />
+          <button><a href="form.html">Cus Beli!</a></button>
+        </div>
+        <div class="produk1">
+          <img src="baju2.jpg" width="270px" alt="Produk1" />
+          <button><a href="form.html">Cus Beli!</a></button>
+        </div>
+        <div class="produk1">
+          <img src="baju2.jpg" width="270px" alt="Produk1" />
+          <button><a href="form.html">Cus Beli!</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>@ 2023 Er Store. All rigths reserved Designen By <a href="https://www.instagram.com/akmal_er01/">@akmal_er01</a></p>
+    </div>
+  </body>
+</html>
